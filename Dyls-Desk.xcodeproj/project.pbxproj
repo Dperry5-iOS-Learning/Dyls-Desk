@@ -1,0 +1,904 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		790F7609296F6BB60026746A /* DylsDeskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7608296F6BB60026746A /* DylsDeskApp.swift */; };
+		790F760B296F6BB60026746A /* DylsDesk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F760A296F6BB60026746A /* DylsDesk.swift */; };
+		790F760D296F6BBA0026746A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790F760C296F6BBA0026746A /* Assets.xcassets */; };
+		790F7610296F6BBA0026746A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 790F760F296F6BBA0026746A /* Preview Assets.xcassets */; };
+		790F761A296F6BBA0026746A /* DylsDeskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7619296F6BBA0026746A /* DylsDeskTests.swift */; };
+		790F7624296F6BBA0026746A /* DylsDeskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7623296F6BBA0026746A /* DylsDeskUITests.swift */; };
+		790F7626296F6BBA0026746A /* My_POCsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7625296F6BBA0026746A /* My_POCsUITestsLaunchTests.swift */; };
+		790F763A296F6CBD0026746A /* AIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7639296F6CBD0026746A /* AIView.swift */; };
+		790F763C296F6CCB0026746A /* MiscellaneousView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F763B296F6CCB0026746A /* MiscellaneousView.swift */; };
+		790F763F296F6CE10026746A /* TwilioHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F763E296F6CE10026746A /* TwilioHome.swift */; };
+		790F7642296F6D0A0026746A /* POCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7641296F6D0A0026746A /* POCView.swift */; };
+		790F7658296F70D40026746A /* ChatHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7657296F70D40026746A /* ChatHelper.swift */; };
+		790F765C296F71070026746A /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F765B296F71070026746A /* Message.swift */; };
+		790F765E296F710E0026746A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F765D296F710E0026746A /* User.swift */; };
+		790F7660296F713B0026746A /* LambdaRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F765F296F713B0026746A /* LambdaRequest.swift */; };
+		790F7662296F71450026746A /* LambdaResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7661296F71450026746A /* LambdaResponse.swift */; };
+		790F7664296F714D0026746A /* ServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7663296F714D0026746A /* ServiceError.swift */; };
+		790F7667296F71910026746A /* OpenAIChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7666296F71910026746A /* OpenAIChatService.swift */; };
+		790F766A296F71C30026746A /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7669296F71C30026746A /* MessageView.swift */; };
+		790F766C296F71D40026746A /* ContentMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F766B296F71D40026746A /* ContentMessageView.swift */; };
+		790F766E296F71DE0026746A /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F766D296F71DE0026746A /* ChatView.swift */; };
+		790F7672296F72210026746A /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7671296F72210026746A /* UIApplication+.swift */; };
+		790F7674296F72E60026746A /* OpenAIHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7673296F72E60026746A /* OpenAIHome.swift */; };
+		790F7677296F73080026746A /* ImageGenerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7676296F73080026746A /* ImageGenerationView.swift */; };
+		790F7679296F73150026746A /* ContentImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7678296F73150026746A /* ContentImageView.swift */; };
+		790F767B296F73240026746A /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F767A296F73240026746A /* ImageView.swift */; };
+		790F767D296F76DA0026746A /* ImageMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F767C296F76DA0026746A /* ImageMessage.swift */; };
+		790F767F296F76EE0026746A /* LambdaImageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F767E296F76EE0026746A /* LambdaImageResponse.swift */; };
+		790F7682296F78310026746A /* AIDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7681296F78310026746A /* AIDestination.swift */; };
+		790F7684296F79060026746A /* AIDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7683296F79060026746A /* AIDestinationViewModel.swift */; };
+		790F7688296F7B9F0026746A /* MiscDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7687296F7B9F0026746A /* MiscDestination.swift */; };
+		790F768A296F7BAC0026746A /* MiscDestinationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 790F7689296F7BAC0026746A /* MiscDestinationViewModel.swift */; };
+		79B9C76D2973109D00BB40E9 /* VerticalExpandingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9C76C2973109D00BB40E9 /* VerticalExpandingTextField.swift */; };
+		79B9C76F2973121A00BB40E9 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9C76E2973121A00BB40E9 /* LoadingView.swift */; };
+		79B9C773297313F500BB40E9 /* TwilioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9C772297313F500BB40E9 /* TwilioService.swift */; };
+		79B9C775297313FE00BB40E9 /* TwilioResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9C774297313FE00BB40E9 /* TwilioResponse.swift */; };
+		79B9C7772973148B00BB40E9 /* TwilioRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9C7762973148B00BB40E9 /* TwilioRequest.swift */; };
+		79B9C77A297314FE00BB40E9 /* PhoneNumberHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9C779297314FE00BB40E9 /* PhoneNumberHelper.swift */; };
+		79B9C77E2973154200BB40E9 /* PhoneNumberError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9C77D2973154200BB40E9 /* PhoneNumberError.swift */; };
+		79B9C780297319F500BB40E9 /* TwilioError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B9C77F297319F500BB40E9 /* TwilioError.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		790F7616296F6BBA0026746A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790F75FD296F6BB60026746A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 790F7604296F6BB60026746A;
+			remoteInfo = "My-POCs";
+		};
+		790F7620296F6BBA0026746A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 790F75FD296F6BB60026746A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 790F7604296F6BB60026746A;
+			remoteInfo = "My-POCs";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		790F7605296F6BB60026746A /* Dyls-Desk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dyls-Desk.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		790F7608296F6BB60026746A /* DylsDeskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylsDeskApp.swift; sourceTree = "<group>"; };
+		790F760A296F6BB60026746A /* DylsDesk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylsDesk.swift; sourceTree = "<group>"; };
+		790F760C296F6BBA0026746A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		790F760F296F6BBA0026746A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		790F7615296F6BBA0026746A /* Dyls-DeskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dyls-DeskTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		790F7619296F6BBA0026746A /* DylsDeskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylsDeskTests.swift; sourceTree = "<group>"; };
+		790F761F296F6BBA0026746A /* Dyls-DeskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Dyls-DeskUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		790F7623296F6BBA0026746A /* DylsDeskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DylsDeskUITests.swift; sourceTree = "<group>"; };
+		790F7625296F6BBA0026746A /* My_POCsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = My_POCsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		790F7639296F6CBD0026746A /* AIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIView.swift; sourceTree = "<group>"; };
+		790F763B296F6CCB0026746A /* MiscellaneousView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscellaneousView.swift; sourceTree = "<group>"; };
+		790F763E296F6CE10026746A /* TwilioHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioHome.swift; sourceTree = "<group>"; };
+		790F7641296F6D0A0026746A /* POCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POCView.swift; sourceTree = "<group>"; };
+		790F7657296F70D40026746A /* ChatHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHelper.swift; sourceTree = "<group>"; };
+		790F765B296F71070026746A /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		790F765D296F710E0026746A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		790F765F296F713B0026746A /* LambdaRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaRequest.swift; sourceTree = "<group>"; };
+		790F7661296F71450026746A /* LambdaResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaResponse.swift; sourceTree = "<group>"; };
+		790F7663296F714D0026746A /* ServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceError.swift; sourceTree = "<group>"; };
+		790F7666296F71910026746A /* OpenAIChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIChatService.swift; sourceTree = "<group>"; };
+		790F7669296F71C30026746A /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		790F766B296F71D40026746A /* ContentMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentMessageView.swift; sourceTree = "<group>"; };
+		790F766D296F71DE0026746A /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		790F7671296F72210026746A /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
+		790F7673296F72E60026746A /* OpenAIHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIHome.swift; sourceTree = "<group>"; };
+		790F7676296F73080026746A /* ImageGenerationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerationView.swift; sourceTree = "<group>"; };
+		790F7678296F73150026746A /* ContentImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentImageView.swift; sourceTree = "<group>"; };
+		790F767A296F73240026746A /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		790F767C296F76DA0026746A /* ImageMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageMessage.swift; sourceTree = "<group>"; };
+		790F767E296F76EE0026746A /* LambdaImageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LambdaImageResponse.swift; sourceTree = "<group>"; };
+		790F7681296F78310026746A /* AIDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDestination.swift; sourceTree = "<group>"; };
+		790F7683296F79060026746A /* AIDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIDestinationViewModel.swift; sourceTree = "<group>"; };
+		790F7687296F7B9F0026746A /* MiscDestination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscDestination.swift; sourceTree = "<group>"; };
+		790F7689296F7BAC0026746A /* MiscDestinationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiscDestinationViewModel.swift; sourceTree = "<group>"; };
+		79B9C76C2973109D00BB40E9 /* VerticalExpandingTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalExpandingTextField.swift; sourceTree = "<group>"; };
+		79B9C76E2973121A00BB40E9 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		79B9C772297313F500BB40E9 /* TwilioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioService.swift; sourceTree = "<group>"; };
+		79B9C774297313FE00BB40E9 /* TwilioResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioResponse.swift; sourceTree = "<group>"; };
+		79B9C7762973148B00BB40E9 /* TwilioRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioRequest.swift; sourceTree = "<group>"; };
+		79B9C779297314FE00BB40E9 /* PhoneNumberHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberHelper.swift; sourceTree = "<group>"; };
+		79B9C77D2973154200BB40E9 /* PhoneNumberError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneNumberError.swift; sourceTree = "<group>"; };
+		79B9C77F297319F500BB40E9 /* TwilioError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwilioError.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		790F7602296F6BB60026746A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790F7612296F6BBA0026746A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790F761C296F6BBA0026746A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		790F75FC296F6BB60026746A = {
+			isa = PBXGroup;
+			children = (
+				790F7607296F6BB60026746A /* Dyls-Desk */,
+				790F7618296F6BBA0026746A /* DylsDeskTests */,
+				790F7622296F6BBA0026746A /* DylsDeskUITests */,
+				790F7606296F6BB60026746A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		790F7606296F6BB60026746A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				790F7605296F6BB60026746A /* Dyls-Desk.app */,
+				790F7615296F6BBA0026746A /* Dyls-DeskTests.xctest */,
+				790F761F296F6BBA0026746A /* Dyls-DeskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		790F7607296F6BB60026746A /* Dyls-Desk */ = {
+			isa = PBXGroup;
+			children = (
+				790F766F296F72060026746A /* Shared */,
+				790F7634296F6C4F0026746A /* UI-POCs */,
+				790F7633296F6BF60026746A /* Miscellaneous */,
+				790F7632296F6BE10026746A /* AI */,
+				790F7608296F6BB60026746A /* DylsDeskApp.swift */,
+				790F760A296F6BB60026746A /* DylsDesk.swift */,
+				790F760C296F6BBA0026746A /* Assets.xcassets */,
+				790F760E296F6BBA0026746A /* Preview Content */,
+			);
+			path = "Dyls-Desk";
+			sourceTree = "<group>";
+		};
+		790F760E296F6BBA0026746A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				790F760F296F6BBA0026746A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		790F7618296F6BBA0026746A /* DylsDeskTests */ = {
+			isa = PBXGroup;
+			children = (
+				790F7619296F6BBA0026746A /* DylsDeskTests.swift */,
+			);
+			path = DylsDeskTests;
+			sourceTree = "<group>";
+		};
+		790F7622296F6BBA0026746A /* DylsDeskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				790F7623296F6BBA0026746A /* DylsDeskUITests.swift */,
+				790F7625296F6BBA0026746A /* My_POCsUITestsLaunchTests.swift */,
+			);
+			path = DylsDeskUITests;
+			sourceTree = "<group>";
+		};
+		790F7632296F6BE10026746A /* AI */ = {
+			isa = PBXGroup;
+			children = (
+				790F7683296F79060026746A /* AIDestinationViewModel.swift */,
+				790F7681296F78310026746A /* AIDestination.swift */,
+				790F7685296F7B040026746A /* Navigation */,
+				790F7635296F6C5E0026746A /* OpenAI */,
+				790F7639296F6CBD0026746A /* AIView.swift */,
+			);
+			path = AI;
+			sourceTree = "<group>";
+		};
+		790F7633296F6BF60026746A /* Miscellaneous */ = {
+			isa = PBXGroup;
+			children = (
+				790F7686296F7B920026746A /* Navigation */,
+				790F763D296F6CCF0026746A /* Twilio */,
+				790F763B296F6CCB0026746A /* MiscellaneousView.swift */,
+			);
+			path = Miscellaneous;
+			sourceTree = "<group>";
+		};
+		790F7634296F6C4F0026746A /* UI-POCs */ = {
+			isa = PBXGroup;
+			children = (
+				790F7641296F6D0A0026746A /* POCView.swift */,
+			);
+			path = "UI-POCs";
+			sourceTree = "<group>";
+		};
+		790F7635296F6C5E0026746A /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				790F7668296F71AD0026746A /* Views */,
+				790F7665296F717D0026746A /* Service */,
+				790F7659296F70F90026746A /* Models */,
+				790F7656296F70C30026746A /* Helpers */,
+			);
+			path = OpenAI;
+			sourceTree = "<group>";
+		};
+		790F763D296F6CCF0026746A /* Twilio */ = {
+			isa = PBXGroup;
+			children = (
+				79B9C778297314F100BB40E9 /* Helper */,
+				79B9C771297313EA00BB40E9 /* Service */,
+				79B9C770297313DD00BB40E9 /* Models */,
+				790F7640296F6CE50026746A /* Views */,
+			);
+			path = Twilio;
+			sourceTree = "<group>";
+		};
+		790F7640296F6CE50026746A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				790F763E296F6CE10026746A /* TwilioHome.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		790F7656296F70C30026746A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				790F7657296F70D40026746A /* ChatHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		790F7659296F70F90026746A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				790F765A296F70FD0026746A /* Service */,
+				790F765B296F71070026746A /* Message.swift */,
+				790F765D296F710E0026746A /* User.swift */,
+				790F767C296F76DA0026746A /* ImageMessage.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		790F765A296F70FD0026746A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				790F765F296F713B0026746A /* LambdaRequest.swift */,
+				790F7661296F71450026746A /* LambdaResponse.swift */,
+				790F7663296F714D0026746A /* ServiceError.swift */,
+				790F767E296F76EE0026746A /* LambdaImageResponse.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		790F7665296F717D0026746A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				790F7666296F71910026746A /* OpenAIChatService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		790F7668296F71AD0026746A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				790F7680296F77C10026746A /* Chat */,
+				790F7675296F72F80026746A /* Image */,
+				790F7673296F72E60026746A /* OpenAIHome.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		790F766F296F72060026746A /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				79B9C76B2973108100BB40E9 /* Views */,
+				790F7670296F720A0026746A /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		790F7670296F720A0026746A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				790F7671296F72210026746A /* UIApplication+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		790F7675296F72F80026746A /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				790F7676296F73080026746A /* ImageGenerationView.swift */,
+				790F7678296F73150026746A /* ContentImageView.swift */,
+				790F767A296F73240026746A /* ImageView.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		790F7680296F77C10026746A /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				790F7669296F71C30026746A /* MessageView.swift */,
+				790F766B296F71D40026746A /* ContentMessageView.swift */,
+				790F766D296F71DE0026746A /* ChatView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		790F7685296F7B040026746A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		790F7686296F7B920026746A /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				790F7687296F7B9F0026746A /* MiscDestination.swift */,
+				790F7689296F7BAC0026746A /* MiscDestinationViewModel.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		79B9C76B2973108100BB40E9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79B9C76C2973109D00BB40E9 /* VerticalExpandingTextField.swift */,
+				79B9C76E2973121A00BB40E9 /* LoadingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79B9C770297313DD00BB40E9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				79B9C77C2973153500BB40E9 /* Service */,
+				79B9C77B2973153200BB40E9 /* Error */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		79B9C771297313EA00BB40E9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				79B9C772297313F500BB40E9 /* TwilioService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		79B9C778297314F100BB40E9 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				79B9C779297314FE00BB40E9 /* PhoneNumberHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		79B9C77B2973153200BB40E9 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				79B9C77D2973154200BB40E9 /* PhoneNumberError.swift */,
+				79B9C77F297319F500BB40E9 /* TwilioError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		79B9C77C2973153500BB40E9 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				79B9C774297313FE00BB40E9 /* TwilioResponse.swift */,
+				79B9C7762973148B00BB40E9 /* TwilioRequest.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		790F7604296F6BB60026746A /* Dyls-Desk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790F7629296F6BBA0026746A /* Build configuration list for PBXNativeTarget "Dyls-Desk" */;
+			buildPhases = (
+				790F7601296F6BB60026746A /* Sources */,
+				790F7602296F6BB60026746A /* Frameworks */,
+				790F7603296F6BB60026746A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Dyls-Desk";
+			productName = "My-POCs";
+			productReference = 790F7605296F6BB60026746A /* Dyls-Desk.app */;
+			productType = "com.apple.product-type.application";
+		};
+		790F7614296F6BBA0026746A /* Dyls-DeskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790F762C296F6BBA0026746A /* Build configuration list for PBXNativeTarget "Dyls-DeskTests" */;
+			buildPhases = (
+				790F7611296F6BBA0026746A /* Sources */,
+				790F7612296F6BBA0026746A /* Frameworks */,
+				790F7613296F6BBA0026746A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790F7617296F6BBA0026746A /* PBXTargetDependency */,
+			);
+			name = "Dyls-DeskTests";
+			productName = "My-POCsTests";
+			productReference = 790F7615296F6BBA0026746A /* Dyls-DeskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		790F761E296F6BBA0026746A /* Dyls-DeskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 790F762F296F6BBA0026746A /* Build configuration list for PBXNativeTarget "Dyls-DeskUITests" */;
+			buildPhases = (
+				790F761B296F6BBA0026746A /* Sources */,
+				790F761C296F6BBA0026746A /* Frameworks */,
+				790F761D296F6BBA0026746A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				790F7621296F6BBA0026746A /* PBXTargetDependency */,
+			);
+			name = "Dyls-DeskUITests";
+			productName = "My-POCsUITests";
+			productReference = 790F761F296F6BBA0026746A /* Dyls-DeskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		790F75FD296F6BB60026746A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					790F7604296F6BB60026746A = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					790F7614296F6BBA0026746A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 790F7604296F6BB60026746A;
+					};
+					790F761E296F6BBA0026746A = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 790F7604296F6BB60026746A;
+					};
+				};
+			};
+			buildConfigurationList = 790F7600296F6BB60026746A /* Build configuration list for PBXProject "Dyls-Desk" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 790F75FC296F6BB60026746A;
+			productRefGroup = 790F7606296F6BB60026746A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				790F7604296F6BB60026746A /* Dyls-Desk */,
+				790F7614296F6BBA0026746A /* Dyls-DeskTests */,
+				790F761E296F6BBA0026746A /* Dyls-DeskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		790F7603296F6BB60026746A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790F7610296F6BBA0026746A /* Preview Assets.xcassets in Resources */,
+				790F760D296F6BBA0026746A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790F7613296F6BBA0026746A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790F761D296F6BBA0026746A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		790F7601296F6BB60026746A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B9C77E2973154200BB40E9 /* PhoneNumberError.swift in Sources */,
+				790F7664296F714D0026746A /* ServiceError.swift in Sources */,
+				790F767D296F76DA0026746A /* ImageMessage.swift in Sources */,
+				790F7660296F713B0026746A /* LambdaRequest.swift in Sources */,
+				790F7679296F73150026746A /* ContentImageView.swift in Sources */,
+				79B9C76D2973109D00BB40E9 /* VerticalExpandingTextField.swift in Sources */,
+				790F763A296F6CBD0026746A /* AIView.swift in Sources */,
+				790F766C296F71D40026746A /* ContentMessageView.swift in Sources */,
+				790F7682296F78310026746A /* AIDestination.swift in Sources */,
+				79B9C77A297314FE00BB40E9 /* PhoneNumberHelper.swift in Sources */,
+				79B9C780297319F500BB40E9 /* TwilioError.swift in Sources */,
+				790F766E296F71DE0026746A /* ChatView.swift in Sources */,
+				790F7677296F73080026746A /* ImageGenerationView.swift in Sources */,
+				790F768A296F7BAC0026746A /* MiscDestinationViewModel.swift in Sources */,
+				79B9C775297313FE00BB40E9 /* TwilioResponse.swift in Sources */,
+				790F763C296F6CCB0026746A /* MiscellaneousView.swift in Sources */,
+				790F760B296F6BB60026746A /* DylsDesk.swift in Sources */,
+				790F763F296F6CE10026746A /* TwilioHome.swift in Sources */,
+				79B9C7772973148B00BB40E9 /* TwilioRequest.swift in Sources */,
+				790F7674296F72E60026746A /* OpenAIHome.swift in Sources */,
+				790F7658296F70D40026746A /* ChatHelper.swift in Sources */,
+				790F767B296F73240026746A /* ImageView.swift in Sources */,
+				790F7684296F79060026746A /* AIDestinationViewModel.swift in Sources */,
+				790F765E296F710E0026746A /* User.swift in Sources */,
+				79B9C773297313F500BB40E9 /* TwilioService.swift in Sources */,
+				790F7667296F71910026746A /* OpenAIChatService.swift in Sources */,
+				790F7688296F7B9F0026746A /* MiscDestination.swift in Sources */,
+				790F767F296F76EE0026746A /* LambdaImageResponse.swift in Sources */,
+				790F7672296F72210026746A /* UIApplication+.swift in Sources */,
+				790F765C296F71070026746A /* Message.swift in Sources */,
+				790F7642296F6D0A0026746A /* POCView.swift in Sources */,
+				79B9C76F2973121A00BB40E9 /* LoadingView.swift in Sources */,
+				790F7662296F71450026746A /* LambdaResponse.swift in Sources */,
+				790F766A296F71C30026746A /* MessageView.swift in Sources */,
+				790F7609296F6BB60026746A /* DylsDeskApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790F7611296F6BBA0026746A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790F761A296F6BBA0026746A /* DylsDeskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		790F761B296F6BBA0026746A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				790F7624296F6BBA0026746A /* DylsDeskUITests.swift in Sources */,
+				790F7626296F6BBA0026746A /* My_POCsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		790F7617296F6BBA0026746A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 790F7604296F6BB60026746A /* Dyls-Desk */;
+			targetProxy = 790F7616296F6BBA0026746A /* PBXContainerItemProxy */;
+		};
+		790F7621296F6BBA0026746A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 790F7604296F6BB60026746A /* Dyls-Desk */;
+			targetProxy = 790F7620296F6BBA0026746A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		790F7627296F6BBA0026746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		790F7628296F6BBA0026746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		790F762A296F6BBA0026746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dyls-Desk/Preview Content\"";
+				DEVELOPMENT_TEAM = 483776HNJ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dperry.My-POCs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		790F762B296F6BBA0026746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Dyls-Desk/Preview Content\"";
+				DEVELOPMENT_TEAM = 483776HNJ4;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dperry.My-POCs";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		790F762D296F6BBA0026746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 483776HNJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dperry.My-POCsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dyls-Desk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dyls-Desk";
+			};
+			name = Debug;
+		};
+		790F762E296F6BBA0026746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 483776HNJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dperry.My-POCsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Dyls-Desk.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Dyls-Desk";
+			};
+			name = Release;
+		};
+		790F7630296F6BBA0026746A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 483776HNJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dperry.My-POCsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My-POCs";
+			};
+			name = Debug;
+		};
+		790F7631296F6BBA0026746A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 483776HNJ4;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "io.dperry.My-POCsUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "My-POCs";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		790F7600296F6BB60026746A /* Build configuration list for PBXProject "Dyls-Desk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790F7627296F6BBA0026746A /* Debug */,
+				790F7628296F6BBA0026746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790F7629296F6BBA0026746A /* Build configuration list for PBXNativeTarget "Dyls-Desk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790F762A296F6BBA0026746A /* Debug */,
+				790F762B296F6BBA0026746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790F762C296F6BBA0026746A /* Build configuration list for PBXNativeTarget "Dyls-DeskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790F762D296F6BBA0026746A /* Debug */,
+				790F762E296F6BBA0026746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		790F762F296F6BBA0026746A /* Build configuration list for PBXNativeTarget "Dyls-DeskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				790F7630296F6BBA0026746A /* Debug */,
+				790F7631296F6BBA0026746A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 790F75FD296F6BB60026746A /* Project object */;
+}
