@@ -12,7 +12,9 @@ struct MiscellaneousView: View {
   
   init() {
     self.destinations = [
-      MiscDestinationViewModel(displayName: "Twilio", destination: .twilio)
+      MiscDestinationViewModel(displayName: "Twilio", destination: .twilio),
+      MiscDestinationViewModel(displayName: "Firebase for Softball", destination: .firebase),
+      MiscDestinationViewModel(displayName: "MapKit POC", destination: .mapKit)
     ]
   }
   
@@ -26,6 +28,10 @@ struct MiscellaneousView: View {
         switch viewModel.destination {
         case .twilio:
           TwilioHome()
+        case .firebase:
+          FirebaseSoftballHome()
+        case .mapKit:
+          MapsKitView()
         }
       }
       .navigationTitle("Misc Things")

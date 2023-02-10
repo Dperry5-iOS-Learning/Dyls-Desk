@@ -29,8 +29,10 @@ struct ChatView: View {
           VerticalExpandingTextField(input: $typingMessage)
           
           Button("Send") {
+            let message = typingMessage
+            typingMessage = ""
             Task {
-              await sendMessage()
+              await sendMessage(message: message)
             }
           }
         }
@@ -49,12 +51,11 @@ struct ChatView: View {
 }
 
 extension ChatView {
-  func sendMessage() async {
-    let question = typingMessage
+  func sendMessage(message: String) async {
     typingMessage = ""
     UIApplication.shared.endEditing()
     isAsking = true
-    await chatHelper.sendMessage(Message(content: question, user: User.User1))
+    await chatHelper.sendMessage(Message(content: message, user: User.User1))
     isAsking = false
   }
 }

@@ -9,4 +9,6 @@ import Foundation
 
 public enum MiscDestination: Hashable {
   case twilio
+  case firebase
+  case mapKit
 }
